@@ -15,6 +15,7 @@ To get started you need a Google tag number and to place the following into your
       gtag('js', new Date());
       gtag('config', 'G-YOURTAG'); 
     </script>
+<!-- Enhanced Analytics Script V2.1 -->
     <script
         src="https://path to this file /enhanced-ga.js"
         data-ga-measurement-id="G-YOURTAG"
@@ -36,3 +37,39 @@ To get started you need a Google tag number and to place the following into your
         defer>
     </script>
 ```
+
+General guidance for Youtube, enable the jsapi and include your site as a source argument. Also it is advised to have a unique ID for the element same goes for other specialty elements. Here is a example of a working YouTube embed:
+```html
+<article class="entry-wrap">
+      <div class="entry-content">
+        <div class="embed-responsive embed-responsive-16by9">
+        <iframe id="youtubePlayer_AuTKp_yULeo" width="640" height="360" src="https://www.youtube-nocookie.com/embed/AuTKp_yULeo?controls=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Frkooyenga.github.io" frameborder="0" allowfullscreen="">
+        </iframe>
+    </div>
+<p>Born to Kill (new song)
+Social Distortion
+House of Blues
+Anaheim, CA 01-10-2023</p>
+      </div>
+</article>
+```
+
+If you don't need something or aren't sure, leave it disabled not all features have been fully tested and in some cases you'll want additional libraries. FOr instance Twitter / X embeds will come with one.
+```html
+<!-- Enable these if you have such embeds/needs and have included their SDKs if necessary -->
+        data-enable-vimeo-tracking="true"         <!-- Set to true if you use Vimeo -->
+        data-enable-twitter-tracking="true"       <!-- Set to true if you use Twitter embeds -->
+        data-enable-form-tracking="true"          <!-- Set to true to track basic form interactions -->
+
+
+        <!-- PII and Adblock (usually false unless specifically needed) -->
+        data-enable-pii-redaction="false"
+        data-enable-adblock-detection="false"
+
+        <!-- Customize these as needed -->
+        data-video-milestones="10,25,50,75,90,95"
+        data-download-extensions="pdf,zip,doc,..." <!-- Keep default or customize -->
+        data-custom-dimension-map='{"site_section": "Videos Page", "user_type": "guest"}'
+```
+
+Ray Kooyenga for BitCurrents
