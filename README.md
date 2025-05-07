@@ -16,7 +16,7 @@ To get started you need a Google tag number and to place the following into your
     </script>
 <!-- Enhanced Analytics Script V2.1 -->
     <script
-        src="https://path to this file /enhanced-ga.js"
+        src="https://path to this file /ga-enhanced.js"
         data-ga-measurement-id="G-YOURTAG"
         data-enable-auto-link-tracking="true"
         data-enable-youtube-tracking="true"       
@@ -31,8 +31,8 @@ To get started you need a Google tag number and to place the following into your
         data-enable-pii-redaction="false"
         data-enable-adblock-detection="false"
         data-video-milestones="10,25,50,75,90,95"
-        data-download-extensions="pdf,zip,doc,..."
-        data-custom-dimension-map='{"site_section": "Videos Page", "user_type": "guest"}'
+        data-download-extensions="pdf,zip,doc"
+        data-custom-dimension-map='{"site_section": "Videos test", "user_type": "guest"}'
         defer>
     </script>
 ```
@@ -98,7 +98,7 @@ Do you use Jekyll? Me too. Here's how I handle it. First if you dont have one al
         data-enable-adblock-detection="false"
         data-video-milestones="10,25,50,75,90,95"
         data-download-extensions="pdf,zip,doc,..."
-        data-custom-dimension-map='{"site_section": "Videos Page", "user_type": "guest"}'
+        data-custom-dimension-map='{"site_section": "Videos Page test", "user_type": "guest"}'
         defer>
     </script>
 ```
