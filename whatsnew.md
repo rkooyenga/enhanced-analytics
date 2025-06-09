@@ -1,3 +1,7 @@
+2.4 fixes 2.3 double fires on yt video
+
+
+
 # Enhanced Analytics - Appendix & Changelog
 
 This document provides details on recent changes and outlines known limitations of the script.
